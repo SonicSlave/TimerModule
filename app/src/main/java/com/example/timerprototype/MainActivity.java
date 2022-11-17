@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity
     NumberPicker mins;
     TextView msg;
     Button conf;
+    int hr;
+    int min;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -38,8 +40,8 @@ public class MainActivity extends AppCompatActivity
 
     public void PrintTime(View v)
     {
-        int hr = hours.getValue();
-        int min = mins.getValue();
+        hr = hours.getValue();
+        min = mins.getValue();
         String toBeSent = "Trying to break the program?";
         conf.setVisibility(View.INVISIBLE);
         if(min != 0 || hr != 0)
